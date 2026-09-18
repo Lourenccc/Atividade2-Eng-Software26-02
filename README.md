@@ -33,6 +33,9 @@ campus:
   (vagas 1–12 destinadas, 13–20 especiais, 21–44 comuns). O usuário registra
   onde estacionou informando o número da vaga; o sistema ocupa a vaga e
   retorna um aviso quando o uso não é compatível com o tipo dela.
+- `entry_point.py` — ponto de entrada único: faz o login (Aluno por RA ou
+  Servidor/Professor por CPF) e abre um menu de linha de comando para
+  registrar a vaga estacionada, ver vagas disponíveis e ver o mapa completo.
 
 ## Como executar
 ```
