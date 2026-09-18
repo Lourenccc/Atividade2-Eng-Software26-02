@@ -12,9 +12,10 @@ import re
 
 
 class Usuario(ABC):
-    def __init__(self, nome, identificador):
+    def __init__(self, nome, identificador, necessidade_especial=False):
         self.nome = nome
         self.identificador = identificador
+        self.necessidade_especial = necessidade_especial
 
     @abstractmethod
     def tipo(self):

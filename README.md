@@ -19,10 +19,16 @@ campus:
 
 ## Arquivos
 
-- `usuario.py` — classe abstrata `Usuario` e as subclasses `Aluno` (login
-  pelo RA) e `Servidor` (login pelo CPF, cobrindo tanto servidores
+- `usuario.py` — classe abstrata `Usuario` (com atributo `necessidade_especial`,
+  independente de ser aluno ou servidor) e as subclasses `Aluno` (login pelo
+  RA) e `Servidor` (login pelo CPF, cobrindo tanto servidores
   técnico-administrativos quanto professores). Inclui `SistemaLogin`, que
   valida o identificador conforme o tipo de usuário.
+- `vaga.py` — classe abstrata `Vaga` e as subclasses `VagaComum` (aceita
+  qualquer usuário), `VagaDestinada` (servidores e PCD/idoso) e
+  `VagaEspecial` (somente PCD/idoso). Cada uma implementa
+  `verificar_acesso(usuario)`, que retorna um aviso quando o uso não é
+  compatível (sem bloqueio físico).
 
 ## Como executar
 ```
