@@ -29,6 +29,10 @@ campus:
   `VagaEspecial` (somente PCD/idoso). Cada uma implementa
   `verificar_acesso(usuario)`, que retorna um aviso quando o uso não é
   compatível (sem bloqueio físico).
+- `estacionamento.py` — classe `Estacionamento`, com as 44 vagas do campus
+  (vagas 1–12 destinadas, 13–20 especiais, 21–44 comuns). O usuário registra
+  onde estacionou informando o número da vaga; o sistema ocupa a vaga e
+  retorna um aviso quando o uso não é compatível com o tipo dela.
 
 ## Como executar
 ```
