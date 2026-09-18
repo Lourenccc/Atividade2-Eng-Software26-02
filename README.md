@@ -17,6 +17,13 @@ campus:
 - `Usuario` → `Aluno`, `Servidor`
 - `Vaga` → `VagaComum`, `VagaEspecial` (acessibilidade/PCD/idoso), `VagaDestinada` (servidores)
 
+## Arquivos
+
+- `usuario.py` — classe abstrata `Usuario` e as subclasses `Aluno` (login
+  pelo RA) e `Servidor` (login pelo CPF, cobrindo tanto servidores
+  técnico-administrativos quanto professores). Inclui `SistemaLogin`, que
+  valida o identificador conforme o tipo de usuário.
+
 ## Como executar
 ```
 python3 entry_point.py
